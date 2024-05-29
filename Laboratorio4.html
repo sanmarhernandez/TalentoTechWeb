@@ -5,48 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-<body>
+<body id="body">
+    <div class="selector-tema">
+        <select name="" id="tema" onchange="cambiarTema()">
+            <option value="light">Claro</option>
+            <option value="dark">Oscuro</option>
+            <option value="crazy">Loco</option>
+        </select>
     <div> 
-        <img class="imagen" src="https://c8.alamy.com/compes/dfx09g/cabeza-del-tambor-dfx09g.jpg">
+            <img class="imagen" src="https://c8.alamy.com/compes/dfx09g/cabeza-del-tambor-dfx09g.jpg">
+    </div>
+        
+    <div>
+            <h1 class="text-decoration-thickness">ARTES CREATIVAS</h1>
+            <p class="Introduccion">Somos una empresa dedicada a construir cualquier elemento en hama beat, para que puedas llevarlo
+                como un llavero, un lindo adorno en tu cuarto, portavasos personalizados, anillos, accesorios, es decir, detalles que seran un lindo regalo.</p>
+    </div>
+
+    <div>
+            <h2 class="Lista"> Nuestros Servicios</h2>
+            <ul>
+                <li> Personalizamos tus detalles</li>
+                <li> Contamos reparación de piezas en caso que lo necesites</li>
+                <li> Enviamos pedidos a nivel nacional</li>
+            </ul>
     </div>
     
-    <div>
-        <h1 class="text-decoration-thickness">ARTES CREATIVAS</h1>
-        <p class="Introduccion">Somos una empresa dedicada a construir cualquier elemento en hama beat, para que puedas llevarlo
-            como un llavero, un lindo adorno en tu cuarto, portavasos personalizados, anillos, accesorios, es decir, detalles que seran un lindo regalo.</p>
-    </div>
-
-    <div>
-        <h2 class="Lista"> Nuestros Servicios</h2>
-        <ul>
-            <li> Personalizamos tus detalles</li>
-            <li> Contamos reparación de piezas en caso que lo necesites</li>
-            <li> Enviamos pedidos a nivel nacional</li>
-        </ul>
-    </div>
-git
-    <di>
-        <h2 class="DatosContacto">Datos de Contacto</h2>
-        <ul>
-            <li>Bogota Cra 103b !52-51</li>
-            <li>Celular 3162554093</li>
-            <li>@artescreativas</li>
-        </ul>
-    </div>
-
-    <div>
+     <di>
+            <h2 class="DatosContacto">Datos de Contacto</h2>
+            <ul>
+                <li>Bogota Cra 103b !52-51</li>
+                <li>Celular 3162554093</li>
+                <li>@artescreativas</li>
+            </ul>
+        </div>
+        <div>
     
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/J4Ym0bukjDo?si=sCWGdCPybkmcOPl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J4Ym0bukjDo?si=sCWGdCPybkmcOPl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    >
+    <div>
+        <a href="https://www.mundonovedad.co/hama-beads/">Ir a la pagina Oficial</a>
     </div>
 
+    <hr>
     <h1 class="Formulario"> Formulario de Contacto</h1>
     <form action="">
         <label for="">Nombre</label>
-        <input type="text" placeholder="nombre" id="name"required >
-        <br>
-        <label for="">Apellido</label>
-        <input type="text" placeholder="apellido" id="apellido"required >
+        <input type="text" placeholder="Nombre"required name="nombre">
         <br>
 
        <label for="">Cedula</label>
@@ -80,11 +86,10 @@ git
        <label for="">Fecha de nacimiento</label>
        <input type="date"required max="2020-05-03" min="1920-01-01" name="fecha">
        <br>
-       <button type="button"onclick="enviarFormulario()">Enviar</button>
+       <button>Enviar</button>
     </form>
    
      <hr>
-
 
     <div>
         <h1 class="Tabla">Tabla Ventas Mensuales</h1>
@@ -116,12 +121,7 @@ git
             </tr>
         </table>
     </div>
-
-    
-
-
 </body>
-
 <style>
     .imagen {
         width: 50%;
@@ -246,8 +246,37 @@ git
 
 </style>
 <script>
+    function cambiarTema(){
+        // Elemento que va cambiar
+        var body = document.getElementById("body")
+        // Valor del selector de temas
+        var tema = document.getElementById("tema").value
+        var fondo = ""
+        var letra = ""
+        if(tema == "light"){
+            fondo = "white"
+            letra = "black"
+        } else if(tema == "dark"){
+            fondo = "black"
+            letra = "white"
+        } else if(tema == "crazy"){
+            fondo = "tomato"
+            letra = "yellow"
+        }
+        // Modificamos el estilo de la pagina
+        body.style.backgroundColor = fondo
+        body.style.color = letra
+    }
 
-    
+    function enviarFormulario(){
+        var nombre = document.getElementById("nombre").value
+        var apellidos = document.getElementById("apellidos").value
+        // Agregar los campos que faltan
+
+        if(nombre && apellidos){
+            alert("Los datos del formulario son: " + nombre + " " + apellidos)
+        }
+    }
 </script>
 </html>
     
