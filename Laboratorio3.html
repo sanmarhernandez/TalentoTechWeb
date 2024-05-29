@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //ejercicio 1//
+
+    /*var num = parseFloat(prompt("Ingrese un numero"))
+    if (num > 0){
+        document.write("El numero es positivo")
+    }else if(num < 0){
+    document.write("El numero es negativo")
+    }else{
+        document.write("el numero es cero")
+    } */
+
+    //ejercicio 2//
+
+    /*var num= parseFloat(prompt("Ingrese el numero:"))
+    if (num%2 ==0){
+        document.write("El numero es par")
+    }else{
+        document.write("El numero es impar")
+    }*/
+
+    //ejercicio 3//
+
+    /*var edad = parseInt(prompt("Ingrese su edad"))
+    if (edad>=18){
+        document.write("Es mayor de edad, puede votar")
+    }else{
+        document.write("No es mayor de edad, no puede votar")
+    }*/
+
+    //ejercicio 4//
+
+    /*var num1=parseFloat(prompt("Ingrese el primer numero"))
+    var num2=parseFloat(prompt("Ingrese el segundo numero"))
+    if (num1 > num2){
+        document.write("El primero numero es mayor:"   + num1)
+    }else if (num1==num2){ 
+        document.write(" Los dos numero son iguales")
+    }else{
+        document.write("El segundo numero es mayor:"   + num2)
+    }*/
+
+    //ejercicio 5, no pude realizarlo//
+
+    /*var precio = parseFloat(prompt("Ingresa el monto de la compra"))
+    var dto=10
+    var pago = 0
+
+    if (precio>100){
+        pago=precio-precio*0.1
+
+        }else{
+            pago=precio
+
+
+        }
+        document.write("El valor a pagar es"  + pago)*/
+      
+    
+
+    //ejercicio 6//
+
+    /*var numeroDia = parseInt(prompt("Ingrese el numero del dia de la semana:"))
+    var nombreDia= ""
+    if(numeroDia > 0 && numeroDia <= 7){
+    switch(numeroDia){
+        case 1:
+            nombreDia = "Lunes"
+            break;
+        case 2:
+            nombreDia = "Martes"
+            break;
+        case 3:
+            nombreDia = "Miercoles"
+            break;
+        case 4:
+            nombreDia = "Jueves"
+            break;
+        case 5:
+            nombreDia = "Viernes"
+            break;
+        case 6:
+            nombreDia = "Sabado"
+            break;
+        case 7:
+            nombreDia = "Domingo"
+            break;
+
+        }
+
+    document.write("El mes ingresado es: " + nombreDia)
+}else{
+    document.write("El día ingresado no es válido")
+}*/
+
+//ejercicio 7//
+
+/*var numeroMes = parseInt(prompt("Ingrese el numero del mes:"))
+    var nombreMes= ""
+    if(numeroMes > 0 && numeroMes <= 12){
+    switch(numeroMes){
+        case 12: 
+            nombreMes = "Diciembre, es invierno"
+            break;    
+        
+        case 1:
+            nombreMes = "Enero, es invierno"
+            break;
+        case 2:
+            nombreMes = "Febrero, es invierno"
+            break;
+        case 3:
+            nombreMes = "Marzo, es primavera"
+            break;
+        case 4:
+            nombreMes = "Abril, es primavera"
+            break;
+        case 5:
+            nombreMes = "Mayo, es primavera"
+            break;
+        case 6:
+            nombreMes = "Junio, es verano"
+            break;
+        case 7:
+            nombreMes = "Julio, es verano"
+            break;
+        case 8:
+            nombreMes = "Agosto, es verano"
+            break;
+        case 9:
+            nombreMes = "septiembre, es otoño"
+            break;
+        case 10:
+            nombreMes = "Octubre, es otoño"
+            break;
+        case 11:
+            nombreMes = "Noviembre, es otoño"
+            break;
+        }
+
+    document.write("El mes ingresado es: "  +  nombreMes)
+}else{
+    document.write("El mes ingresado no es válido")
+}*/
+var mes = parseInt(prompt("Ingrese el mes"))
+ 
+switch(mes){
+    case 2:
+    case 3:
+    case 4:
+        document.write("Es primavera")
+        break
+    case 5:
+    case 6:
+    case 7:
+        document.write("Es primavera")
+        break
+    case 8:
+    case 9:
+    case 10:
+        document.write("Es otoño")
+        break
+    case 11:
+    case 12:
+    case 1:
+        document.write("Es invierno")
+        break
+}
+
+
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+</body>
+
+<script>
+    var edad = parseInt(prompt("ingrese su edad: "))
+    var mayorDeEdad = edad >=18 //operador logico
+    document.write("¿Es mayor dde edad?:" + mayorDeEdad)
+
+
+   //implementar algoritmo que reciba una nota e imprima
+   //true si la nota es mayor o igual a 3, o false si es menor
+
+   var nota =parseFloat(prompt("ingrese su nota: "))
+   const NOTA_AROBATORIA = 3
+   var aprobo = nota >= NOTA_APROBATORIA
+   document.write("¿El estudiante apropo?: " + aprobo)
+
+   /** Implementar un algoritmo que imprima true si el
+    * numero ingresadp es PAR o false si no lo es*/
+
+   var numero = parseFloat(prompt( "Ingrese el numero: "))
+    var residuo = numero%2
+    var par = residuo == 0
+    document.write("El numero " + numero + " es par? " + par)
+
+   /* Implementar unn algoritmo que me permita verificar si unna persona 
+   es apta para votar, debe seer colombiano y mayor de edad*/
+
+   var edad = parseInt(prompt(" Ingrese la edad: "))
+   var nacionalidad = prompt("Ingrese la nacionalidad: ")
+
+   var puedeVotar = edad >= 18 && nacionalidad == "Colombiano"
+   document.write("¿Puede votar? " + puedeVotar)
+
+   /*subsisidio solo para no colombiano* Negación*/
+
+   var nacionalidad = prompt("Ingrese su nacionalidad: " )
+   var esColombiano = nacionalidad == "Colombiano"
+   var aptoSubsidio = !esColombiano
+   document.write("¿ Puede recibir subsidio? " + aptoSubsidio)
+
+   /* Ingresando una nota y un numero de asistencias determinar si un estudiante 
+   aprueba con una nota superior o igua a 3 y minimo 60 asistencias*/
+
+   var nota = parseFloat(prompt ("Ingrese la nota: "))
+   var asistencias = parseInt(prompt("Ingrese las asistencias: "))
+
+   var aprueba = nota >= 3 && asistencias >= 60
+   document.write( "El estudiante aprobó? " + aprueba)
+
+
+   
+   /* Ingresando una estacion determiar si es tiempo de sembrar, teniendo en cuenta 
+   que solo se puede sembrar en verano u otoño*/
+
+   var estacion = prompt( "Ingrese la estación: ")
+   var tiempoDeSembrar = estacion== "Verano" || estacion == "Otoño"
+   document.write("¿Es tiempo de Sembrar?" + tiempopDeSembrar)
+
+   /* Ingresando un animal. deterinar si es doméstico, teniendo en cuenta que solo los gatos, 
+   perros o pajaros son domésticos*/
+
+
+   var animal= prompt ("Ingrese el animal: ")
+   var esDomestico = animal == "Gato" || animal == "Perro" || animal == "Pajaro"
+   documento.write("¿Es domestico? " + esDomestico)
+
+
+   /* Determinar si un numero ingresado es > 1 y < 100
+   var numero = parseFloat(prompt("Ingrese un numero: "))*/
+
+   var valido = numero >1 && numero <100
+    document.write ("¿El numero es valido? " + valido)
+
+
+
+
+ 
+
+</script>
+</html>
+
+
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div> 
+        <img class="imagen" src="https://c8.alamy.com/compes/dfx09g/cabeza-del-tambor-dfx09g.jpg">
+    </div>
+    
+    <div>
+        <h1 class="text-decoration-thickness">ARTES CREATIVAS</h1>
+        <p class="Introduccion">Somos una empresa dedicada a construir cualquier elemento en hama beat, para que puedas llevarlo
+            como un llavero, un lindo adorno en tu cuarto, portavasos personalizados, anillos, accesorios, es decir, detalles que seran un lindo regalo.</p>
+    </div>
+
+    <div>
+        <h2 class="Lista"> Nuestros Servicios</h2>
+        <ul>
+            <li> Personalizamos tus detalles</li>
+            <li> Contamos reparación de piezas en caso que lo necesites</li>
+            <li> Enviamos pedidos a nivel nacional</li>
+        </ul>
+    </div>
+
+    <di>
+        <h2 class="DatosContacto">Datos de Contacto</h2>
+        <ul>
+            <li>Bogota Cra 103b !52-51</li>
+            <li>Celular 3162554093</li>
+            <li>@artescreativas</li>
+        </ul>
+    </div>
+
+    <div>
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J4Ym0bukjDo?si=sCWGdCPybkmcOPl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h1 class="Formulario"> Formulario de Contacto</h1>
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre"required name="nombre">
+        <br>
+
+       <label for="">Cedula</label>
+       <input type="number" placeholder="Cedula" name="Cedula">
+       <br>
+
+       <label for="">Escoja una ciudad</label>
+    <select name="Ciudad" id="" required>
+        <option value=""></option>
+        <option value="Bogota">Bogota</option>
+        <option value="Chia">Chia</option>
+        <option value="Sogamoso">Sogamoso</option>
+    </select>
+        <br>
+
+        <label for="">Telefono</label>
+        <input type="tel" required name="Telefono">
+        <br>
+
+        <label for="">Direccion</label>
+        <textarea name="" id="" name="Direccion"></textarea>
+        <br>
+        <label for="">Correo electronico</label> 
+        <input type="email" required placeholder="Ingresar Email" name="Email">
+        <br>
+
+       <label for="">Subir Prototipo</label>
+       <input type="file" required placeholder="Subir Anexos" accept="image/" name="CV">
+       <br>
+  
+       <label for="">Fecha de nacimiento</label>
+       <input type="date"required max="2020-05-03" min="1920-01-01" name="fecha">
+       <br>
+       <button>Enviar</button>
+    </form>
+   
+     <hr>
+
+
+    <div>
+        <h1 class="Tabla">Tabla Ventas Mensuales</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Mes</th>
+                <th>Unidades</th>
+                <th>Ventas</th>
+            </tr>
+            <tr>
+                <td>Enero</td>
+                <td>12345</td>
+                <td>$987656</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>76593</td>
+                <td>$564398</td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td>45327</td>
+                <td>$876905</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>65098</td>
+                <td>$675489</td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+
+</body>
+
+<style>
+    .imagen {
+        width: 50%;
+        position: center;
+        display: block;
+        border-radius: 300px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 5px 1px 30px aquamarine;
+        outline-color: rgb(30, 171, 214);
+        outline-style: solid;
+        
+     }
+
+     .text-decoration-thickness {
+        color: rgb(207, 137, 189);
+        text-decoration-thickness: 2px 2px 5px #e215b6;
+        font-family: Courier New;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 60px;
+    }
+
+      .Introduccion {
+        text-align: left;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.5;
+        word-spacing: 5px;
+       
+     }
+
+     .Lista {
+        color: rgb(207, 137, 189);
+        font-family: Courier New;
+
+     }
+
+     ul>li  {
+        list-style-type: square;
+       background-color: rgb(161, 238, 212)
+    }
+
+     ul {
+        background-color: rgb(207, 137, 189);
+        opacity: 0.6;
+        padding: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        }
+
+    .DatosContacto {
+        color: rgb(207, 137, 189);
+        font-family: Courier New;
+    }
+
+    .Tabla {
+        font-family: Courier New;
+        color: rgb(207, 137, 189);
+    }
+
+    table#estilo-tabla {
+        font-family: 'Courier New', Courier, monospace;
+        border: 1px solid;
+        width: 70%;
+        text-align: center;
+        border-collapse: collapse;
+     }
+    
+       th, td {
+            border: 1px solid;
+            padding: 10px;
+            border-color: #2260bd;
+        }
+    
+    table#estilo-tabla tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    
+    table#estilo-tabla tr:hover {
+            background-color: #8fd2ec;
+            color: aliceblue;
+        }
+    
+    table#estilo-tabla th {
+            background-color: #329b96;
+            color: rgb(229, 199, 223);
+        }
+
+    .Formulario {
+            background: #bfe7f7;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(207, 137, 189);
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px;
+            display: inline-block;
+            border: 1px solid #04918a;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(234, 136, 190);
+            padding: 10px 20px;
+            width: 100%;
+            margin: 8px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(29, 166, 176);
+        }
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+</style>
+</html>
+
+    

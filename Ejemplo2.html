@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="background-color: aquamarine;">
+        <!--  encabezado-->
+        <tr style="background-color: azure;">
+            <th style="background-color: brown; color: bisque;">Nombre</th>
+            <th>Correo</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+            <th>Profesion</th>
+            <th>Fecha de nacimiento</th>
+        </tr>
+        <!--Datos-->
+        <tr>
+            <td style="border: 0cqh;">Sandra Marcela Hernandez</td>
+            <td>sandrahernandezapp@gmail.com</td>
+            <td>Bogota</td>
+            <td>44</td>
+            <td>zootecnista</td>
+        </tr>
+        <tr>
+            <td>Juan Perez</td>
+            <td>juan@coore,com</td>
+            <td>Cali</td>
+            <td>28</td>
+            <td>Ingeniro Agronomo</td>
+        </tr>
+        <tr>
+            <td>Lorena Sanchez</td>
+            <td>Lorecorr@coore.com</td>
+            <td>Medellin</td>
+            <td>28</td>
+            <td> Ingeniera Agricola</td>
+           
+        </tr>
+        <tr>
+            <td>Manuel Lopera</td>
+            <td>Manuelop@gmail.com</td>
+            <td>Manizales</td>
+            <td>33</td>
+            <td>Conductor</td>
+           
+        </tr>
+        <tr>
+            <td>Federico Cardoso</td>
+            <td>FedeCar21@yahoo.com</td>
+            <td>Tunja</td>
+            <td>48</td>
+            <td>Contador</td>
+           
+        </tr>
+        <tr>
+            <td>Lorena Fuentes</td>
+            <td>Lorenafc@yahoo.es</td>
+            <td>Barranquilla</td>
+            <td>39</td>
+            <td>Profesora</td>
+           
+        </tr>
+        <tr>
+            <td>Luciana Alvarado</td>
+            <td>LuciAlavarado.gmail.com</td>
+            <td>Medellin</td>
+            <td>21</td>
+            <td>Chef profesional</td>
+           
+        </tr>
+        <tr>
+            <td>Manuel Felipe Hurtado</td>
+            <td>MFelipe@hotmail.com</td>
+            <td>Tulua</td>
+            <td>35</td>
+            <td>Gerente de proyectos</td>
+           
+        </tr>
+        <tr>
+            <td>Luis Eduardo Parra</td>
+            <td>LuchoP@gmail.com</td>
+            <td>Medellin</td>
+            <td>28</td>
+            <td>Maquinista</td>
+           
+        </tr>
+        <tr>
+            <td>Pedro Arciniegas</td>
+            <td>parciniegasm@yahoo.com</td>
+            <td>Leticia</td>
+            <td>25</td>
+            <td>Tecnologo agrpecuario</td>
+           
+        </tr>
+    </table>
+    <hr>
+    <!-- Formulario-->
+    <form method="post">
+
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Nombre"required name="nombre">
+    <!-- Salto de linea-->
+    <br>
+    <!-- Campo de Fecha-->
+    <label for="">Fecha de nacimiento</label>
+    <input type="date"required max="2024-05-02" min="1900-01-01" name="fecha">
+    <br>
+    <!-- Campo numerico-->
+    <label for="">Ingresos mensuales</label>
+    <input type="number" placeholder="Ingreso mensual" name="Salario">
+    <br>
+    <!-- Campo Email-->
+    <label for="">Correo electronico</label> 
+    <input type="email" required placeholder="Ingresar Email" name="Email">
+    <br>
+    <!-- Campo Archivo-->
+    <label for="">Subir CV</label>
+    <input type="file" required placeholder="Subir Archivo" accept="image/" name="CV">
+    <br>
+    <!-- Campo password-->
+    <label for="">Password</label>
+    <input type="password" required name="Password">
+    <br>
+    <!-- Campo Hora -->
+    <label for="">Hora de Ingreso</label>
+    <input type="time"required name="Hora_ingreso">
+    <br>
+    <!-- Campo Mes-->
+    <label for="">Mes de Ingreso a la Empresa</label>
+    <input type="month" required name="Mes_ingreso">
+    <br>
+    <!-- Campo Color-->
+    <label for="">Color del uniforme</label>
+    <input type="color" required name="color_uniforme">
+    <br>
+    <!-- Campo Radio-->
+    <label for="">Genero</label>
+    <input type="radio" name="genero" value="F" required>
+    <label for="">Femenino</label>
+    <input type="radio" name="genero" value="M" required>
+    <label for="">Masculino</label>
+    <br>
+    <!-- Campo Checkbox-->
+    <label for="">Dias laborados</label>
+    <input type="checkbox" name="dias" value="Lunes">
+    <label for="">Lunes</label>
+    <input type="checkbox" name="dias" value="Martes">
+    <label for="">Martes</label>
+    <input type="checkbox" name="dias" value="Miercoles">
+    <label for="">Miercoles</label>
+    <input type="checkbox" name="dias" value="Jueves">
+    <label for="">Jueves</label>
+    <input type="checkbox" name="dias" value="Viernes">
+    <label for="">Viernes</label>
+    <input type="checkbox" name="dias" value="Sabado">
+    <label for="">Sabado</label>
+    <input type="checkbox" name="dias" value="Domingo">
+    <label for="">Domingo</label>
+    <br>
+    <!-- Campo URL-->
+    <label for="">Link de Perfil Linkedin</label>
+    <input type="url" required name="Linkedin">
+    <br>
+    <!-- Campo de telefono-->
+    <label for="">Telefono</label>
+    <input type="tel" required name="Telefono">
+    <br>
+    <!-- Campo Selector-->
+    <label for="">Escoja una ciudad</label>
+    <select name="Ciudad" id="" required>
+        <option value=""></option>
+        <option value="Manizales">Manizales</option>
+        <option value="Bogota">Bogota</option>
+        <option value="Cali">Cali</option>
+    </select>
+    <br>
+    <!-- Fieldset-->
+    <fieldset>
+        <legend> Informacion General</legend>
+        <!-- Text Area-->
+        <label for="">Descripcion del Perfil</label>
+        <textarea name="" id="" name="Descripcion"></textarea>
+        <label for="">Tipo de Documento</label>
+        <imput list="documento" name="documento">
+    <!--  Datalist-->
+        <datalist id="documento">
+        <option value="Cedula">Cedula</option>
+        <option value="Tarjeta de identidad"> Tarjeta de Identidad</option>
+        <option value="Pasaporte">Pasaporte</option>
+    </datalist>
+    <br>
+
+
+    </fieldset>
+    <!-- Button-->
+    <button>Enviar</button>
+    </form>
+</body>
+</html>
