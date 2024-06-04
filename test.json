@@ -1,0 +1,104 @@
+[
+    {
+        "nombre":"Leonel",
+        "apellidos": "Messi",
+        "edad":34,
+        "mascotas": [
+            {
+                "nombre": "Firulais",
+                "Tipo": "Perro",
+                "Raza": "Doberman"
+            },
+            {
+                "nombre": "Pepe",
+                "tipo": "Loro",
+                "Raza": "Guacamayo"
+
+            }
+        ]
+    },
+    {
+        "nombre":"Radamel",
+        "apellidos": "Falcao",
+        "edad":39,
+        "mascotas": [
+            {
+                "nombre": "Pepito",
+                "Tipo": "Gato",
+                "Raza": "Criollo"
+            }
+        ]
+        
+    },
+    {
+        "nombre":"Jerson",
+        "apellidos": "Martinez",
+        "edad":40,
+        "mascotas": [
+            {
+                "nombre": "Mitch",
+                "Tipo": "Gato",
+                "Raza": "Persa"
+            },
+            {
+                "nombre": "Zeus",
+                "tipo": "Gato",
+                "Raza": "Main Coon"
+            }
+        ]
+    },
+    {
+        "nombre":"Rene",
+        "apellidos": "Higuita",
+        "edad":50,
+        "mascotas": [
+            {
+                "nombre": "Bancuber",
+                "Tipo": "Perro",
+                "Raza": "Crillo"
+            }
+          
+        ]
+    },
+    {
+        "nombre":"Juan",
+        "apellidos": "Quintero",
+        "edad":30,
+        "mascotas": [
+            {
+                "nombre": "Pachito",
+                "Tipo": "Gato",
+                "Raza": "Siberiano"
+            },
+            {
+                "nombre": "Betto",
+                "tipo": "Haster",
+                "Raza": "Enano Ruso"
+            },
+            {
+                "nombre": "Roberta",
+                "tipo": "Perro",
+                "Raza": "Criolla"
+            }
+        ]
+        
+    },
+    {
+        "nombre":"Luis",
+        "apellidos": "Diaz",
+        "edad":36,
+        "mascotas": [
+            {
+                "nombre": "Pipo",
+                "Tipo": "Perro",
+                "Raza": "Pequines"
+            },
+            {
+                "nombre": "Peter",
+                "tipo": "Perro",
+                "Raza": "Bulldog Ingles"
+            }
+        ]
+    }
+    
+]
