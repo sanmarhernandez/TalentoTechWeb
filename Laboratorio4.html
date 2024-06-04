@@ -13,7 +13,14 @@
             <option value="crazy">Loco</option>
         </select>
     <div> 
-            <img class="imagen" src="https://c8.alamy.com/compes/dfx09g/cabeza-del-tambor-dfx09g.jpg">
+            
+            <img id= "logo" class="imagen" src="https://c8.alamy.com/compes/dfx09g/cabeza-del-tambor-dfx09g.jpg">
+ 
+        <select onchange="cambiarTamanoLogo(value)">
+            <option value ="Large"> Grande</option>
+            <option value="Medium"> Mediano</option>
+            <option value="Small"> Pequeño</option>
+        </select>
     </div>
         
     <div>
@@ -40,10 +47,8 @@
             </ul>
         </div>
         <div>
-    
             <iframe width="560" height="315" src="https://www.youtube.com/embed/J4Ym0bukjDo?si=sCWGdCPybkmcOPl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    >
     <div>
         <a href="https://www.mundonovedad.co/hama-beads/">Ir a la pagina Oficial</a>
     </div>
@@ -51,16 +56,16 @@
     <hr>
     <h1 class="Formulario"> Formulario de Contacto</h1>
     <form action="">
-        <label for="">Nombre</label>
-        <input type="text" placeholder="Nombre"required name="nombre">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre">
         <br>
 
-       <label for="">Cedula</label>
-       <input type="number" placeholder="Cedula" name="Cedula">
+       <label for="cedula">Cedula</label>
+       <input type="number" id="cedula" name="cedula">
        <br>
 
        <label for="">Escoja una ciudad</label>
-    <select name="Ciudad" id="" required>
+    <select name="Ciudad" required id="Ciudad">
         <option value=""></option>
         <option value="Bogota">Bogota</option>
         <option value="Chia">Chia</option>
@@ -69,24 +74,24 @@
         <br>
 
         <label for="">Telefono</label>
-        <input type="tel" required name="Telefono">
+        <input type="tel" name="Telefono" id="Telefono">
         <br>
 
         <label for="">Direccion</label>
-        <textarea name="" id="" name="Direccion"></textarea>
+        <textarea name="Direccion" id="Direccion"></textarea>
         <br>
         <label for="">Correo electronico</label> 
-        <input type="email" required placeholder="Ingresar Email" name="Email">
+        <input type="Email"  placeholder="Ingresar Email" name="Email" id ="Email">
         <br>
 
        <label for="">Subir Prototipo</label>
-       <input type="file" required placeholder="Subir Anexos" accept="image/" name="CV">
+       <input type="file"  placeholder="Subir Anexos" accept="image/" name="CV">
        <br>
   
        <label for="">Fecha de nacimiento</label>
-       <input type="date"required max="2020-05-03" min="1920-01-01" name="fecha">
+       <input type="date" max="2020-05-03" min="1920-01-01" name="fecha">
        <br>
-       <button>Enviar</button>
+       <button onclick=enviarFormulario()>Enviar</button>
     </form>
    
      <hr>
@@ -123,7 +128,7 @@
     </div>
 </body>
 <style>
-    .imagen {
+   /* .imagen {
         width: 50%;
         position: center;
         display: block;
@@ -135,7 +140,7 @@
         outline-color: rgb(30, 171, 214);
         outline-style: solid;
         
-     }
+     }*/
 
      .text-decoration-thickness {
         color: rgb(207, 137, 189);
@@ -261,22 +266,38 @@
             letra = "white"
         } else if(tema == "crazy"){
             fondo = "tomato"
-            letra = "yellow"
+            letra = "blue"
         }
         // Modificamos el estilo de la pagina
         body.style.backgroundColor = fondo
         body.style.color = letra
     }
-
-    function enviarFormulario(){
-        var nombre = document.getElementById("nombre").value
-        var apellidos = document.getElementById("apellidos").value
-        // Agregar los campos que faltan
-
-        if(nombre && apellidos){
-            alert("Los datos del formulario son: " + nombre + " " + apellidos)
+    function cambiarTamanoLogo(tamano){
+         var logo=document.getElementById("logo")
+        var tamanoLogo = 0
+        if(tamano == "Small"){
+            tamanoLogo =300
+        }else if(tamano == "Medium"){
+            tamanoLogo = 400
+        }else if(tamano =="Large"){
+            tamano = 500
         }
+        logo.style.width = tamanoLogo + "px"
+    
     }
+
+   
+        var name = document.getElementById("nombre").value
+        var cedu = document.getElementById("cedula").value
+        // var Ciudad = document.getElementById("Ciudad").value
+        // var Telefono = document.getElementById("Telefono").value
+        // var Email = document.getElementById("Email").value
+        // var Direccion = document.getElementById("Direccion").value
+
+        function enviarFormulario(){
+            console.log(name);
+            alert("Los datos del formulario son: " + name + " " + cedu + " ")
+        }
 </script>
 </html>
     
